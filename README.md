@@ -1,69 +1,70 @@
-# React + TypeScript + Vite
+Signal Decoder Game 🎮
+A fun memory-based game built with React, TypeScript, Vite, and TailwindCSS.
+Your goal is to remember and select the flashing squares correctly to score points and win!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Getting Started
+1. Extract the Project
+Download and extract the ZIP file containing the project.
 
-Currently, two official plugins are available:
+2. Open the Project Folder
+Open the extracted folder in your terminal and run:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+code .
+(This opens the project in VS Code)
 
-## Expanding the ESLint configuration
+3. Install Dependencies
+Inside the terminal, run:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+npm install
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+4. Start the Development Server
+Run the project with:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+npm run dev
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+5. Open in Browser
+The app will be running at:
+👉 http://localhost:5173
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🎮 Game Features
+✅ Responsive design (mobile + desktop)
+
+✅ Light / Dark mode toggle 🌙☀️
+
+✅ Sound effects (click, beep, win, etc.) 🔊
+
+✅ Animations (flash, shake, pop, fade) ✨
+
+✅ Multiple levels with scoring system 🏆
+
+✅ Win screen with replay option 🎉
+
+🛠️ Tech Stack
+Vite + React + TypeScript
+
+TailwindCSS v4
+
+Custom CSS Animations
+
+LocalStorage theme persistence
+
+📂 Folder Structure
+bash
+Copy
+Edit
+📦 project-root
+ ┣ 📂 src
+ ┃ ┣ 📂 assets/sounds     # game sound files
+ ┃ ┣ 📂 components        # Grid component
+ ┃ ┣ 📂 hooks             # useSound hook
+ ┃ ┣ 📂 utils             # rules logic
+ ┃ ┣ App.tsx              # main game logic
+ ┃ ┣ main.tsx             # React entry point
+ ┃ ┗ index.css            # global styles + dark mode
+ ┣ index.html
+ ┣ package.json
+ ┗ README.md
+📜 License
+This project is created for learning & demonstration purposes.
